@@ -5,6 +5,8 @@ import router from './router'
 import store from './store'
 //import { assignTagsToEvents } from './eventTagRelations'
 import { dbInit } from './eventTagRelations'
+import { registerSW } from 'virtual:pwa-register'
+registerSW()
 
 createApp(App).use(router).use(store).mount('#app')
 
